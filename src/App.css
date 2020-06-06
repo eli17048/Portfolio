@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
 /* Base Styles
 ********************************************************************* */
 html {
@@ -230,7 +232,6 @@ header {
 	background: linear-gradient(135deg, #DB85BD 0%, #ACCAF9 100%);
  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1 );
 }
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 body {
   margin: 0;
@@ -243,27 +244,93 @@ body {
   height: 100vh;
 }
 
-.knockout{
-  margin-top:50%;
-  font-family:sans-serif;
-  font-size:45vw;
-  text-align:center;
-  
-  /* background + gradiant */
-  background: linear-gradient(211deg, #674172, #81cfe0, #a2ded0);
-  background-size: 600% 600%;
-
-  animation: AnimationName 5s ease infinite;
-  -webkit-text-fill-color: transparent;
-  background-clip:text;
-  -webkit-text-stroke-width:4px ; /* add px here*/
-  -webkit-text-stroke-color: #010;
+.neon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0 20px;
+  font-size: 6em;
+  color: #fff;
+  text-shadow: 0 0 20px #ff005b;
 }
 
-@keyframes AnimationName { 
-    0%{background-position:0% 96%}
-    50%{background-position:100% 5%}
-    100%{background-position:0% 96%}
+.neon::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 20px;
+  z-index: -1;
+  color: #ff005b;
+  filter: blur(15px);
+}
+
+.neon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fe3a80;
+  z-index: -2;
+  opacity: 0.5;
+  filter: blur(40px);
+}
+
+.title .smallsep {
+	background: #fff;
+	height: 2px;
+	width: 70px;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.title h1 {
+	font-size: 20vw;
+	 top: 50%;
+	 left: 50%;
+	 margin: 0;
+	 transform: translate(-50%, -50%);
+	 position: absolute;
+	 font-weight: 900;
+}
+
+.wrapper {
+	 width: 100%;
+	 margin: 0 auto;
+	 height: 100%;
+}
+ .wrapper h1 {
+	 color: #fbe6d3;
+	 text-transform: uppercase;
+	 width: 100%;
+	 text-align: center;
+	 text-shadow: -1px -1px 0 #3e2e6a, 1px -1px 0 #3e2e6a, -1px 1px 0 #3e2e6a, 1px 1px 0 #3e2e6a;
+}
+ .wrapper h1:after {
+	 content: attr(data-heading);
+	 position: absolute;
+	 left: 0;
+	 top: 0;
+	 z-index: 2;
+	 overflow: hidden;
+	 color: #f3576c;
+	 transform: translate(0.4vw, 0.3vh);
+	 mix-blend-mode: darken;
+	 text-align: center;
+	 width: 100%;
+	 text-shadow: 1px 0px 0px #3e2e6a, 0px 1px 0px #130b52, 2px 1px 0px #3e2e6a, 1px 2px 0px #130b52, 3px 2px 0px #3e2e6a, 2px 3px 0px #130b52, 4px 3px 0px #3e2e6a, 3px 4px 0px #130b52, 5px 4px 0px #3e2e6a, 4px 5px 0px #130b52, 6px 5px 0px #3e2e6a, 5px 6px 0px #130b52, 7px 6px 0px #3e2e6a;
+}
+.title h2 {
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin-top: 50px;
 }
 
 @media only screen and (max-height: 700px) {
