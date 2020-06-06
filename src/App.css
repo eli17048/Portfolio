@@ -238,7 +238,6 @@ body {
   padding: 0;
   background-color: #262626;
   background: url(https://s3.ca-central-1.amazonaws.com/image-web-frankie/dark-wood.jpeg);
-  background-size: cover;
   background-position: center;
   font-family: 'Quicksand', sans-serif;
   height: 100vh;
