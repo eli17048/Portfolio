@@ -17,6 +17,19 @@ body {
 }
 /* Grid
 ********************************************************************* */  
+
+body{
+	margin:0;height:100%;}
+canvas{
+    position:absolute;top:0;left:0;
+    background-image: linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
+    background-image: -o-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
+    background-image: -moz-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
+    background-image: -webkit-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
+    background-image: -ms-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
+    
+   
+}
 .container {
   
 	position: relative;
@@ -244,23 +257,24 @@ body {
 }
 
 .neon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin: 0;
-  padding: 0 20px;
-  font-size: 6em;
+-webkit-align-self: center;
+-ms-flex-item-align: center;
+align-self: center;
+padding: 2rem;
+max-width: 960px;
+text-align: center;
+transform: translate(-50%, -50%);
   color: #fff;
   text-shadow: 0 0 20px #ff005b;
 }
 
 .neon::after {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 0 20px;
+	-webkit-align-self: center;
+	-ms-flex-item-align: center;
+	align-self: center;
+	padding: 2rem;
+	max-width: 960px;
+	text-align: center;
   z-index: -1;
   color: #ff005b;
   filter: blur(15px);
@@ -268,11 +282,12 @@ body {
 
 .neon::before {
   content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+  -webkit-align-self: center;
+-ms-flex-item-align: center;
+align-self: center;
+padding: 2rem;
+max-width: 960px;
+text-align: center;
   background-color: #fe3a80;
   z-index: -2;
   opacity: 0.5;
@@ -288,7 +303,7 @@ body {
 	margin-bottom: 30px;
 }
 .title h1 {
-	font-size: 20vw;
+	font-size: 10vw;
 	 top: 50%;
 	 left: 50%;
 	 margin: 0;
