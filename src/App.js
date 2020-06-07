@@ -113,18 +113,6 @@ function init() {
   snow();
 };
 
-canvas.addEventListener("mousemove", function(e) {
-   let mX = e.clientX
-   let mY = e.clientY;
-
-  
-});
-
-
-window.addEventListener("resize",function(){
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-})
 
 init();
 export default App;
