@@ -251,6 +251,7 @@ header {
 	-ms-flex-item-align: center;
 	align-self: center;
 	padding: 2rem;
+	min-width: 920px;
 	max-width: 960px;
 	text-align: center;
 }
@@ -305,7 +306,7 @@ header {
 
 @media only screen and (max-height: 700px) {
 .title h1 {
-	font-size: 80px;
+	font-size: 70px;
 }
 }
 .title p {
@@ -319,25 +320,7 @@ header {
 	font-size: 65px;
 }
 }
-.title .icon {
-	color: pink;
-	font-size: 50px;
-}
-.main_nav {
-	position: fixed;
-	top: 0px;
-	max-height: 50px;
-	z-index: 999;
-	width: 100%;
-	padding-top: 17px;
-	background: none;
-	overflow: hidden;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
-	opacity: 0;
-	top: -100px;
-	padding-bottom: 6px;
-}
+
 
 
 @media only screen and (max-width: 766px) {
@@ -416,24 +399,13 @@ transform:translate(0, 10px) rotate(45deg);
 opacity: 0;
 }
 }
-/* About Section
-********************************************************************* */
 
 #about {
   padding: 100px 0 50px 0;
   background-color:#E5D0F2;
 
 }
-/* Team Section
-********************************************************************* */
-#team {
-	padding: 50px 0 100px 0;
-}
-#team .icon {
-	font-size: 26px;
-}
-/* Skills Section
-********************************************************************* */
+
 #skills {
 	padding: 100px 0 100px 0;
 	background-color:#FFD0CF;
@@ -495,8 +467,7 @@ opacity: 0;
 .value-100 {
 	width: 100%;
 }
-/* Portfolio Section
-********************************************************************* */
+
 #portfolio {
   padding: 100px 0 100px 0;
   background:#DBB2D4 ;
