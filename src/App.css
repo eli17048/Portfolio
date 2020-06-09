@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300");
 @import url('https://fonts.googleapis.com/css?family=Quicksand');
 
-/* Base Styles
-********************************************************************* */
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -16,8 +15,7 @@ body {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	color: #222;
 }
-/* Grid
-********************************************************************* */  
+
 
 body{
 	margin:0;height:100%;}
@@ -46,7 +44,7 @@ canvas{
 	box-sizing: border-box;
 }
 
-/* For devices larger than 400px */
+/* Responsive */
 @media (min-width: 400px) {
 .container {
 	width: 85%;
@@ -54,7 +52,6 @@ canvas{
 }
 }
 
-/* For devices larger than 550px */
 @media (min-width: 550px) {
 .container {
 	width: 80%;
@@ -111,7 +108,7 @@ canvas{
 .one-half.column {
 	width: 48%;
 }
-/* Offsets */
+
 .offset-by-one.column,  .offset-by-one.columns {
 	margin-left: 8.66666666667%;
 }
@@ -192,7 +189,6 @@ h6 {
 	letter-spacing: 0;
 }
 
-/* Larger than phablet */
 @media (min-width: 550px) {
 h1 {
 	font-size: 5.0rem;
@@ -359,8 +355,8 @@ header {
 }
 
 
-/*animated scroll arrow animation*/
-@-webkit-keyframes fade_move_down {
+
+@-webki-keyframes fade_move_down {
  0% {
 -webkit-transform:translate(0, -10px) rotate(45deg);
 opacity: 0;
@@ -410,6 +406,8 @@ opacity: 0;
 	padding: 100px 0 100px 0;
 	background-color:#FFD0CF;
 }
+
+
 .progressBar {
 	margin-bottom: 26px;
 	margin-bottom: 1.66em;
@@ -425,6 +423,10 @@ opacity: 0;
 	height: 30px;
 	background: white;
 	overflow: hidden;
+	text-align: center;
+	color: white;
+	text-decoration-color: snow;
+	margin-top: 1px;
 }
 .progressBarValue {
 	height: 30px;
@@ -471,59 +473,9 @@ opacity: 0;
 #portfolio {
   padding: 100px 0 100px 0;
   background:#DBB2D4 ;
+}
   
-}
-.image {
-	background-image: "my-app\IMG_3158.JPG";
-	width: auto;
-	height: auto;
-	margin-left: auto;
-	margin-right: auto;
-	transition: .5s;
-}
-.image:hover {
-	opacity: 0.6;
-	transition: .3s;
-	background-repeat: no-repeat;
-	background-position: center;
-}
 
-
-
-
-
-ul {
-	list-style: circle inside;
-}
-ol {
-	list-style: decimal inside;
-}
-ol, ul {
-	padding-left: 0;
-	margin-top: 0;
-}
-ul ul, ul ol, ol ol, ol ul {
-	margin: 1.5rem 0 1.5rem 3rem;
-	font-size: 90%;
-}
-li {
-	margin-bottom: 1rem;
-}
-
-.u-full-width {
-	width: 100%;
-	box-sizing: border-box;
-}
-.u-max-full-width {
-	max-width: 100%;
-	box-sizing: border-box;
-}
-.u-pull-right {
-	float: right;
-}
-.u-pull-left {
-	float: left;
-}
 
 .container:after, .row:after, .u-cf {
 	content: "";
